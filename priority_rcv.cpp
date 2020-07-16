@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	char ch;
 	int pid ;
 	int prio; 
-	char alph[26] = {'A','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-	int indexPriority[26] = {10,11,12,13,14,15,16,17,18,-17,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16};
+	char alph[26] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+	int indexPriority[26] = {10,11,12,13,14,15,16,17,18,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16, -17, -18};
 
     // Check if a filename has been specified in the command
 	if (argc < 2)
@@ -50,14 +50,14 @@ int main(int argc, char *argv[])
 		}
 		else {
 			for (int i = 0; i < 26; i++){   
-				if (pid == indexPriority[i])
+				if (prio == indexPriority[i])
 				{          
 					printf("%c", alph[i]);
 					fflush(stdout);
 					sleep (1);					
 				}
 				else {
-					sleep (1);
+					
 				}
 			}
 		}		   
