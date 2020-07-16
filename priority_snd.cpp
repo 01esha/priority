@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
  char *filename;
  char ch;
  int pid = getpid(); 
- char alph[26] = {'A','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
- int indexPriority[26] = {10,11,12,13,14,15,16,17,18,-17,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16};
+ char alph[26] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+ int indexPriority[26] = {10,11,12,13,14,15,16,17,18,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16, -17, -18};
 
 
  printf("My PID is %d\n", pid);
